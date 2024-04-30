@@ -26,4 +26,14 @@ public class ContactController {
         model.addAttribute("contacts", contacts);
         return "index";
     }
+
+
+
+    //pour tester la page 500
+    /*
+    @GetMapping("test500")
+    public String test500(){
+        return "jExistePas";
+    }
+     */
 }
