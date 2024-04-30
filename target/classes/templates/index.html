@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr" layout:decorate="layout"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/extras/spring-security5"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+</head>
+
+<body>
+<div layout:fragment="content">
+    <p Th:text="${message}"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+R
+java:S1854"<Remove this useless assignment to local variable "contacts".(ç… Ý
+C
+java:S1481"-Remove this unused "contacts" local variable.(ç… Ý
