@@ -23,7 +23,7 @@ public class ContactController {
     @GetMapping({"/", ""})
     public String index (Model model){
         List<Contact> contacts = contactRepository.findAll();
-        model.addAttribute("message", "Tout fonctionne correctement");
+        model.addAttribute("contacts", contacts);
         return "index";
     }
 }

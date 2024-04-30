@@ -35,7 +35,7 @@ public class Contact implements Serializable{
     @ManyToOne
     private Category category;
 
-    public Contact (String firstName, String lastName, String email, String phone, String address, Category category){
+    public Contact (String lastName, String firstName, String email, String phone, String address, Category category){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

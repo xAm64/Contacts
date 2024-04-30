@@ -10,7 +10,32 @@
 
 <body>
 <div layout:fragment="content">
-    <p Th:text="${message}"></p>
+    <div class = "panel panel-primary">
+        <div class = "panel-heading">Liste des Contacts</div>
+        <div class = "panel-body">
+
+            <form th:action ="@{/index}" method = "get">
+                <label>Mot clés</label>
+                <input type = "text" name = "keyword" th:value = "${keyword}">
+                <button type = "submit" class = "btn btn-primary"> Rechercher </button>
+            </form>
+            <br>
+            <table class = "table" >
+                <tr>
+                    <th>Id</th><th>Nom</th><th>Prénom</th><th>Email</th><th>Téléphone</th><th>Adresse</th>
+                </tr>
+                <tr th:each="c:${contacts}">
+                    <td th:text="${c.id}">?</td>
+                    <td th:text="${c.firstName}"></td>
+                    <td th:text="${c.lastName}"></td>
+                    <td th:text="${c.email}"></td>
+                    <td th:text="${c.phone}"></td>
+                    <td th:text="${c.address}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
 </div>
 
 </body>
