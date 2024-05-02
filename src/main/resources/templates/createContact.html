@@ -50,8 +50,8 @@
                     <div class="form-group">
                         <label class="control-label">Categories :</label>
                         <label>
-                            <select class="form-control" name="categories">
-                                <option th:each="categories:${listCategories}" th:value="${categories.id}" th:text="${categories.name}"></option>
+                            <select class="form-control" name="listCategories">
+                                <option th:each="cat:${listCategories}" th:value="${cat.id}" th:text="${cat.name}"></option>
                             </select>
                         </label>
                     </div>

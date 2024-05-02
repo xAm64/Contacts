@@ -34,11 +34,6 @@ public class IBusinessImpl implements IBusiness {
     }
 
     @Override
-    public Optional<Category> findCategoryById(Long id) {
-        return Optional.empty();
-    }
-
-    @Override
     public List<Category> findAllCategories() {
         return Collections.emptyList();
     }

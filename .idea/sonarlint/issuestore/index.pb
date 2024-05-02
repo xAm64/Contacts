@@ -23,3 +23,5 @@ e
 5src/main/java/fr/fms/exceprions/ContactException.java,e\7\e73c8875a04d21b2a48ba362f1c5b8183790059b
 [
 +src/main/java/fr/fms/entities/Category.java,e\a\eaca6e40994962bef6ae0ebb92777e3480df3e22
+`
+0src/main/java/fr/fms/dao/CategoryRepository.java,f\d\fd5f2b3c0afb6b51e298f96a0f986a8283328db0
