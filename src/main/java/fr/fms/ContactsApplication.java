@@ -40,5 +40,14 @@ public class ContactsApplication  implements CommandLineRunner{
 		contactRepository.save(new Contact("Alejandra", "Ramirez", "alejandra@eval.com", "0554946214", "Porte de l'españa", divers));
 		contactRepository.save(new Contact("Frederic", "Bec", "fred@eval.com", "0554925677", "Route des aventuriers", personnel));
 		contactRepository.save(new Contact("Claire", "hods", "claire@famile.com", "0194236723", "", famille));
+		contactRepository.save(new Contact("Mohamed", "Elbabili", "mohamed@eval.com", "0783157603", "", profesionnels));
+		contactRepository.save(new Contact("Arnaud", "Richard", "arnaud@eval.com", "0482248396", "Crp de Beterette TAI", divers));
+		contactRepository.save(new Contact("Mathieu", "Fix", "mathieu@eval.com", "0358435176", "Crp de Beterette TAI", divers));
+		contactRepository.save(new Contact("Remy", "", "remy@eval.com", "", "", divers));
+		contactRepository.save(new Contact("Julien", "Lapertot", "julien@eval.com", "0610579344", "chemin de la passion de Python", divers));
+		contactRepository.save(new Contact("Isnaa", "Toffah", "isnaa@eval.com", "", "Rue du massacre", personnel));
+		contactRepository.save(new Contact("Dudiir", "", "dudiir@eval.com", "", "Chemin du chaman", personnel));
+		contactRepository.save(new Contact("Oatscar", "", "oatscar@eval.com", "", "Chemin du meuuuuh", personnel));
+		contactRepository.save(new Contact("Gilles", "", "gilles@eval.com", "0505487065", "Saint palais", personnel));
 	}
 }

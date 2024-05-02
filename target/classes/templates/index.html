@@ -17,8 +17,8 @@
                 <br>
                 <table class = "table" >
                     <tr>
-                        <td th:each="cat:${listCategories}">
-                            <a th:href = "@{/index (id=${cat.id} , category=${cat.name})}" th:text = "${cat.name}"></a>
+                        <td th:each="cat:${listCategory}">
+                            <a th:href = "@{/ (id=${cat.id} , category=${cat.name})}" th:text = "${cat.name}"></a>
                         </td>
                     </tr>
                 </table>
@@ -30,7 +30,7 @@
                 <tr>
                     <th>Id</th><th>Nom</th><th>Prénom</th><th>Email</th><th>Téléphone</th><th>Adresse</th>
                 </tr>
-                <tr th:each="c:${contacts}">
+                <tr th:each="c:${listContact}">
                     <td th:text="${c.id}">?</td>
                     <td th:text="${c.firstName}"></td>
                     <td th:text="${c.lastName}"></td>
@@ -40,9 +40,9 @@
                 </tr>
             </table>
             <br>
-            <ul class="nav nav-pills" >
+            <ul class="nav nav-pills">
                 <li th:class="${currentPage == status.index}?'active':''" th:each="page, status:${pages}" >
-                    <a th:href = "@{/index(id=${idCat != null}?${idCat}:'' , page=${status.index}, keyword=${keyword})}" th:text="${status.index}"></a>
+                    <a th:href = "@{/(id=${idCat != null}?${idCat}:'' , page=${status.index}, keyword=${keyword})}" th:text="${status.index}"></a>
                 </li>
             </ul>
         </div>

@@ -24,6 +24,7 @@ public class Contact implements Serializable{
     private Long id;
     @Size(max = 50)
     private  String firstName;
+    @NotNull
     @Size(max = 50)
     private String lastName;
     @Email

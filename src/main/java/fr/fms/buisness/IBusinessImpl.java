@@ -4,6 +4,8 @@ import fr.fms.dao.*;
 import fr.fms.entities.*;
 import fr.fms.exceprions.ContactException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import java.util.*;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
@@ -52,6 +54,13 @@ public class IBusinessImpl implements IBusiness {
             }
         }
         contactRepository.save(newContact);
+    }
+
+    public Page<Contact> findContactByFirstNameContains(String keyword, Pageable pageable) {
+        return contactRepository.findContactByFirstNameContains(keyword, pageable);
+    }
+    public Page<Contact>findContactByCategoryId(Long categoryId, Pageable pageable){
+        return contactRepository.findByCategoryId(categoryId, pageable);
     }
 
     //Authentification

@@ -21,3 +21,5 @@ b
 2src/test/java/fr/fms/ContactsApplicationTests.java,f\d\fd4f1b86d8e4df6e41bc5873e90017509b6d8797
 e
 5src/main/java/fr/fms/exceprions/ContactException.java,e\7\e73c8875a04d21b2a48ba362f1c5b8183790059b
+[
++src/main/java/fr/fms/entities/Category.java,e\a\eaca6e40994962bef6ae0ebb92777e3480df3e22

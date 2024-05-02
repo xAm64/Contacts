@@ -17,4 +17,6 @@ public interface IBusiness {
     public Optional<Category> findCategoryById(Long id);
     public List<Category> findAllCategories();
     public void createContact(Contact contact) throws ContactException;
+    public Page<Contact> findContactByFirstNameContains(String keyword, Pageable pageable);
+    public Page<Contact> findContactByCategoryId(Long categoryId, Pageable pageable);
 }

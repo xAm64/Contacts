@@ -1,14 +1,15 @@
 
 œ
-java:S1192+"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 3 times.(’¶ØÅûÿÿÿÿ8§ç¢Èó1J$4ee82ad5-f246-415f-bda2-ec782b831052
-q
-java:S1192""ODefine a constant instead of duplicating this literal "listCategories" 3 times.(í®³²ùÿÿÿÿ8¾Ö­Èó1
+java:S1192+"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 4 times.(’¶ØÅûÿÿÿÿ8ÏÄ€Éó1J$26ab3d59-a00f-4a6a-984b-590ba7c58f6c
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶ç¢Èó1J$cfb66c20-48a2-49c3-84eb-49abeecd2ff7
-Š
-java:S1854"GRemove this useless assignment to local variable "isUserAuthenticated".(•©‚à8¶ç¢Èó1J$e530d8d5-501b-4a05-89e1-e2ecb1c0e7da
-{
-java:S1481"8Remove this unused "isUserAuthenticated" local variable.(•©‚à8»ç¢Èó1J$24417b10-4920-41c4-aabd-2c9e0a745295
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞÄ€Éó1J$9cedee6e-44a3-4da7-99dc-41fad402f750
+M
+java:S1905/"+Remove this unnecessary cast to "Pageable".(ß×”Èúÿÿÿÿ8öÛ°Éó1
+H
+java:S19053"+Remove this unnecessary cast to "Pageable".(‚†òã8ûÛ°Éó1
+~	java:S125?"<This block of commented-out lines of code should be removed.(òÓªû8ãÄ€Éó1J$5cbc0e3d-a986-4da5-b91d-db24d8d1fffa
 ƒ
-java:S46842"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8»ç¢Èó1J$2050835f-008c-4494-862b-cbf356e9fdec
-ƒ	java:S125N"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8Àç¢Èó1J$e3d22ce8-5651-4a3c-94a9-4c48964bdf37
+java:S4684V"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8ãÄ€Éó1J$824e811a-e699-43a0-95de-2bfd898c9887
+ƒ	java:S125r"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8èÄ€Éó1J$3c50cacd-f886-4b59-99da-4a4eb225ce38
+€
+java:S1068"8Remove this unused "VALIDATION_ERROR_MSG" private field.(èä¿·ûÿÿÿÿ8èÄ€Éó1J$83641636-ba67-46cd-94b1-943c7d91377f
