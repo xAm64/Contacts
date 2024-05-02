@@ -29,7 +29,9 @@ public class ContactController {
     public String index (Model model){
         boolean isUserAuthenticated = buisness.isUserAuthenticated();
         List<Contact> contacts = contactRepository.findAll();
+        List<Category> categories = buisness.findAllCategories();
         model.addAttribute("contacts", contacts);
+        model.addAttribute("listCategories", categories);
         return "index";
     }
 

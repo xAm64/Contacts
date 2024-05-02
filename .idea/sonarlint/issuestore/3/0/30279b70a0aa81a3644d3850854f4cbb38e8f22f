@@ -1,12 +1,14 @@
 
 œ
-java:S1192)"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 3 times.(’¶ØÅûÿÿÿÿ8†ÄÅó1J$9c0fdf73-9613-4d6d-adf5-16228ad6991a
+java:S1192+"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 3 times.(’¶ØÅûÿÿÿÿ8§ç¢Èó1J$4ee82ad5-f246-415f-bda2-ec782b831052
+q
+java:S1192""ODefine a constant instead of duplicating this literal "listCategories" 3 times.(í®³²ùÿÿÿÿ8¾Ö­Èó1
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÄÅó1J$95d4fd53-2453-4845-8ba3-632a5a6d6e2b
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶ç¢Èó1J$cfb66c20-48a2-49c3-84eb-49abeecd2ff7
 Š
-java:S1854"GRemove this useless assignment to local variable "isUserAuthenticated".(•©‚à8•ÄÅó1J$222e3bd0-fc38-4c26-b4e9-69ae37df2837
+java:S1854"GRemove this useless assignment to local variable "isUserAuthenticated".(•©‚à8¶ç¢Èó1J$e530d8d5-501b-4a05-89e1-e2ecb1c0e7da
 {
-java:S1481"8Remove this unused "isUserAuthenticated" local variable.(•©‚à8•ÄÅó1J$a9914442-5de1-4306-b303-472d88778ff9
+java:S1481"8Remove this unused "isUserAuthenticated" local variable.(•©‚à8»ç¢Èó1J$24417b10-4920-41c4-aabd-2c9e0a745295
 ƒ
-java:S46840"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8šÄÅó1J$4f4bc4ff-7040-4126-854c-27824986efb0
-ƒ	java:S125L"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8ŸÄÅó1J$ac6df745-9ba3-472b-8f5f-dd6f1393d10f
+java:S46842"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8»ç¢Èó1J$2050835f-008c-4494-862b-cbf356e9fdec
+ƒ	java:S125N"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8Àç¢Èó1J$e3d22ce8-5651-4a3c-94a9-4c48964bdf37

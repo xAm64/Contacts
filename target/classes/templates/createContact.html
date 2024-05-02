@@ -48,12 +48,16 @@
                     </div>
                     <!-- liste des catégories -->
                     <div class="form-group">
-                        <label class="control-label">Category:</label>
+                        <label class="control-label">Categories :</label>
                         <label>
-                            <select class="form-control" name="category">
-                                <option th:each="category : ${listCategories}" th:value="${category.id}" th:text="${category.name}"></option>
+                            <select class="form-control" name="categories">
+                                <option th:each="categories:${listCategories}" th:value="${categories.id}" th:text="${categories.name}"></option>
                             </select>
                         </label>
+                    </div>
+                    <!-- zone message d'erreur -->
+                    <div th:if="${errorMessage != null}" class="alert alert-danger" role="alert">
+                        <p th:text="${errorMessage}"></p>
                     </div>
                     <button type="submit" class="btn btn-primary">Créer</button>
                 </form>
