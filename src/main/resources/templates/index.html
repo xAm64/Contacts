@@ -13,13 +13,6 @@
     <div class = "panel panel-primary">
         <div class = "panel-heading">Liste des Contacts</div>
         <div class = "panel-body">
-
-            <form th:action ="@{/}" method = "get">
-                <label>Mot clés</label>
-                <input type = "text" name = "keyword" th:value = "${keyword}">
-                <button type = "submit" class = "btn btn-primary"> Rechercher </button>
-            </form>
-            <br>
             <table class = "table" >
                 <tr>
                     <th>Id</th><th>Nom</th><th>Prénom</th><th>Email</th><th>Téléphone</th><th>Adresse</th>
@@ -33,6 +26,12 @@
                     <td th:text="${c.address}"></td>
                 </tr>
             </table>
+            <br>
+            <ul class="nav nav-pills" >
+                <li th:class="${currentPage == status.index}?'active':''" th:each="page, status:${pages}" >
+                    <a th:href = "@{/index(id=${idCat != null}?${idCat}:'' , page=${status.index}, keyword=${keyword})}" th:text="${status.index}"></a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

@@ -1,6 +1,7 @@
 package fr.fms.buisness;
 
 import fr.fms.entities.*;
+import fr.fms.exceprions.ContactException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -15,5 +16,5 @@ public interface IBusiness {
     //catégories
     public Optional<Category> findCategoryById(Long id);
     public List<Category> findAllCategories();
-
+    public void createContact(Contact contact) throws ContactException;
 }

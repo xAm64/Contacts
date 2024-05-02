@@ -1,4 +1,12 @@
 
+œ
+java:S1192)"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 3 times.(’¶ØÅûÿÿÿÿ8†ÄÅó1J$9c0fdf73-9613-4d6d-adf5-16228ad6991a
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8µì¢Àó1J$7467cea2-1428-447d-b5c1-92a7a5e86b3a
-ƒ	java:S125#"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8¿ì¢Àó1J$7b1347e3-5868-40af-ba1e-ed0ad3d2c51d
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÄÅó1J$95d4fd53-2453-4845-8ba3-632a5a6d6e2b
+Š
+java:S1854"GRemove this useless assignment to local variable "isUserAuthenticated".(•©‚à8•ÄÅó1J$222e3bd0-fc38-4c26-b4e9-69ae37df2837
+{
+java:S1481"8Remove this unused "isUserAuthenticated" local variable.(•©‚à8•ÄÅó1J$a9914442-5de1-4306-b303-472d88778ff9
+ƒ
+java:S46840"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8šÄÅó1J$4f4bc4ff-7040-4126-854c-27824986efb0
+ƒ	java:S125L"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8ŸÄÅó1J$ac6df745-9ba3-472b-8f5f-dd6f1393d10f

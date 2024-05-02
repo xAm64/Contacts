@@ -2,6 +2,7 @@ package fr.fms.buisness;
 
 import fr.fms.dao.*;
 import fr.fms.entities.*;
+import fr.fms.exceprions.ContactException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.*;
@@ -38,6 +39,19 @@ public class IBusinessImpl implements IBusiness {
     @Override
     public List<Category> findAllCategories() {
         return Collections.emptyList();
+    }
+
+    public void createContact(Contact newContact) throws ContactException{
+        List<Contact> contactList = contactRepository.findAll();
+        for (Contact contact: contactList){
+            if (    newContact.getFirstName().equals(contact.getFirstName()) &&
+                    newContact.getLastName().equals(contact.getLastName()) &&
+                    newContact.getEmail().equals(contact.getEmail()) &&
+                    newContact.getPhone().equals(contact.getPhone())){
+                throw new ContactException("Ce contact existe déjà");
+            }
+        }
+        contactRepository.save(newContact);
     }
 
     //Authentification
