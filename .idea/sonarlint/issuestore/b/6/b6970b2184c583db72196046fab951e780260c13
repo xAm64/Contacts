@@ -1,0 +1,13 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ÃµÇ¿ó1J$43d2af69-3398-4a5f-a7c5-c6be233b2506
+~
+java:S1854"6Remove this useless assignment to local variable "pe".(¶ÓÐàûÿÿÿÿ8ÌµÇ¿ó1J$0870d3bc-e706-4a35-85b4-13fb1af9f3a7
+o
+java:S1481"'Remove this unused "pe" local variable.(¶ÓÐàûÿÿÿÿ8ÖµÇ¿ó1J$ab1078da-e9e4-46bf-8877-aae59cb1d8e8
+À
+java:S4601)"xReorder the URL patterns from most to less specific, the pattern "/validateOrder" should occurs before "/validateOrder".(ÏûÇ‚üÿÿÿÿ8ÛµÇ¿ó1J$ce110985-e5c8-4a87-a917-dcca0d851171
+É
+java:S4601)"€Reorder the URL patterns from most to less specific, the pattern "/confirmationOrder" should occurs before "/confirmationOrder".(ÏûÇ‚üÿÿÿÿ8ÛµÇ¿ó1J$bbbed906-950a-496e-b05f-b999b9e419b6
+¾
+java:S4601)"vReorder the URL patterns from most to less specific, the pattern "/CustomerForm" should occurs before "/CustomerForm".(ÏûÇ‚üÿÿÿÿ8ÛµÇ¿ó1J$422ffb94-3ad3-4e0d-b13e-03fb54c08dea

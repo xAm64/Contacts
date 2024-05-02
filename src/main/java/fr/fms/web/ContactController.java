@@ -1,4 +1,4 @@
-package fr.fms.controllers;
+package fr.fms.web;
 
 import fr.fms.buisness.IBusinessImpl;
 import fr.fms.dao.ContactRepository;
@@ -20,14 +20,14 @@ public class ContactController {
         this.buisness = buisness;
     }
 
+
+
     @GetMapping({"/", ""})
     public String index (Model model){
         List<Contact> contacts = contactRepository.findAll();
         model.addAttribute("contacts", contacts);
         return "index";
     }
-
-
 
     //pour tester la page 500
     /*
