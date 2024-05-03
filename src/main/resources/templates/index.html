@@ -28,7 +28,7 @@
         <div class = "panel-body">
             <table class = "table" >
                 <tr>
-                    <th>Id</th><th>Nom</th><th>Prénom</th><th>Email</th><th>Téléphone</th><th>Adresse</th>
+                    <th>Id</th><th>Nom</th><th>Prénom</th><th>Email</th><th>Téléphone</th><th>Adresse</th><th>Mettre à jour</th>
                 </tr>
                 <tr th:each="c:${listContact}">
                     <td th:text="${c.id}">?</td>
@@ -37,6 +37,7 @@
                     <td th:text="${c.email}"></td>
                     <td th:text="${c.phone}"></td>
                     <td th:text="${c.address}"></td>
+                    <td><a class="btn btn-warning" th:href="@{/updateContact(idContact=${c.id})}">Changer</a></td>
                 </tr>
             </table>
             <br>

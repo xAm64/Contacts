@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Controller
@@ -84,6 +85,36 @@ public class ContactController {
             return "/addContact";
         }
         return "redirect:/";
+    }
+    //mise a jour d'un contact
+    @GetMapping("/updateContact")
+    public String updateContact(Model model, @RequestParam(name = "idContact") Long id){
+        boolean isUserAuthenticated = buisness.isUserAuthenticated();
+        model.addAttribute("isUserAuthenticated", isUserAuthenticated);
+        List<Category> categories = buisness.findAllCategories();
+        Optional<Contact> optionalContactToUpdate = buisness.findContactById(id);
+        if (optionalContactToUpdate.isPresent()){
+            Contact contactUpdate = optionalContactToUpdate.get();
+            model.addAttribute("contact", contactUpdate);
+            log.info(CONTACT_LOAD_SUCCESS_MSG);
+        }
+        model.addAttribute("listCategory", categories);
+        return "updateContact";
+    }
+    //enregistre le contact à jour
+    @PostMapping("/updateContactFinish")
+    public String updateContactFinish(Model model, @Valid Contact contactUpdate, BindingResult bindingResult){
+        boolean isUserAuthenticated = buisness.isUserAuthenticated();
+        model.addAttribute("isUserAuthenticated", isUserAuthenticated);
+        List<Category>categories = buisness.findAllCategories();
+        model.addAttribute("listCategory", categories);
+        if (bindingResult.hasErrors()){
+            log.error(VALIDATION_ERROR_MSG, bindingResult.getAllErrors());
+            return "/updateContact";
+        } else  {
+            //créer la MAJ dans buisness
+        }
+        return "redirect:/index";
     }
 
     //page d'accès refusé.

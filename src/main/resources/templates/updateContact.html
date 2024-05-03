@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout" lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mise a jour d'un contact</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+    <div class="col-4 col-xs-2">
+    <!-- pannel de gauche -->
+    </div>
+    <div class="col-4 col-xs-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Mise a jour d'un contact</div>
+            <div class="panel-body">
+                <form th:action="@{/updateContactFinish(id=${contact.id})}" method="post">
+                    <!-- nom -->
+                    <div class="form-group">
+                        <label class="control-label">Nom :</label>
+                        <input class="form-control" type="text" name="firstName" th:value="${contact.firstName}">
+                        <span th:errors="${contact.firstName}" class="text-danger"></span>
+                    </div>
+                    <!-- prénom -->
+                    <div class="form-group">
+                        <label class="control-label">Prénom :</label>
+                        <input class="form-control" type="text" name="lastName" th:value="${contact.lastName}">
+                        <span th:errors="${contact.lastName}" class="text-danger"></span>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group">
+                        <label class="control-label">Email :</label>
+                        <input class="form-control" type="email" name="email" th:value="${contact.email}">
+                        <span th:errors="${contact.email}" class="text-danger"></span>
+                    </div>
+                    <!-- téléphone -->
+                    <div class="form-group">
+                        <label class="control-label">Téléphone :</label>
+                        <input class="form-control" type="tel" name="phone" th:value="${contact.phone}">
+                        <span th:errors="${contact.phone}" class="text-danger"></span>
+                    </div>
+                    <!-- adresse -->
+                    <div class="form-group">
+                        <label class="control-label">Adresse :</label>
+                        <input class="form-control" type="textarea" name="address" th:value="${contact.address}">
+                        <span th:errors="${contact.address}" class="text-danger"></span>
+                    </div>
+                    <!-- catégories -->
+                    <div class="form-group">
+                        <label class="control-label">Categories :</label>
+                        <select class="form-control" name="category">
+                            <option th:each="cat:${listCategories}" th:value="${cat.id}" th:text="${cat.name}"></option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Mise a jour</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 col-xs-2">
+    <!-- pannel de droite -->
+    </div>
+    </div>
+</div>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

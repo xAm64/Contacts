@@ -1,18 +1,20 @@
 
-œ
-java:S1192)"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 4 times.(’¶ØÅûÿÿÿÿ8¯ıÈÊó1J$52d2f0a0-efb0-4ba0-a2f1-db86f7dfe74f
-s
-java:S1905-"+Remove this unnecessary cast to "Pageable".(ß×”Èúÿÿÿÿ8ÍıÈÊó1J$58438229-18f6-4941-9b67-33c9bf4a5aca
-n
-java:S19051"+Remove this unnecessary cast to "Pageable".(‚†òã8ÍıÈÊó1J$46a324cc-ad3a-4219-bf42-198d6993de08
-ƒ
-java:S4684H"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8ÍıÈÊó1J$2678f05d-fd04-48bf-8958-4ba359e794ef
-ƒ	java:S125d"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8ÒıÈÊó1J$7351eb03-f948-4803-a960-e819304c10bf
+j
+java:S11927"MDefine a constant instead of duplicating this literal "listCategory" 3 times.(Ê—ÏÍ8€©…éó1
+v
+java:S1192*"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 6 times.(’¶ØÅûÿÿÿÿ8€©…éó1
+M
+java:S1905."+Remove this unnecessary cast to "Pageable".(ß×”Èúÿÿÿÿ8”©…éó1
+H
+java:S19052"+Remove this unnecessary cast to "Pageable".(‚†òã8”©…éó1
+]
+java:S4684I"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8”©…éó1
+]
+java:S4684j"@Replace this persistent entity with a simple POJO or DTO object.(Ù©¡ş8™©…éó1
+^	java:S125ƒ"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8©…éó1
 W
-java:S1128":Remove this unused import 'fr.fms.dao.CategoryRepository'.(ë³«˜8Îõ‹Ëó1
+java:S1128":Remove this unused import 'fr.fms.dao.CategoryRepository'.(ë³«˜8©…éó1
 [
-java:S1128"9Remove this unused import 'fr.fms.dao.ContactRepository'.(°Íë·ÿÿÿÿÿ8Îõ‹Ëó1
+java:S1128"9Remove this unused import 'fr.fms.dao.ContactRepository'.(°Íë·ÿÿÿÿÿ8©…éó1
 u
-java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8Îõ‹Ëó1
-€
-java:S1068"8Remove this unused "VALIDATION_ERROR_MSG" private field.(èä¿·ûÿÿÿÿ8×ıÈÊó1J$938dfb26-5846-48dd-ac03-d3254dd03ecc
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8©…éó1

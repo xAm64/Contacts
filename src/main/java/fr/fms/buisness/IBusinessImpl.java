@@ -21,21 +21,16 @@ public class IBusinessImpl implements IBusiness {
     CategoryRepository categoryRepository;
 
     //contacts
-    /**
-     * Récupère tous les articles
-     *
-     * @return Liste contenant tous les articles
-     */
     public List<Contact> findAllArticle() { return contactRepository.findAll(); }
 
     @Override
     public List<Contact> findAll() {
-        return Collections.emptyList();
+        return contactRepository.findAll();
     }
 
     @Override
     public List<Category> findAllCategories() {
-        return Collections.emptyList();
+        return categoryRepository.findAll();
     }
 
     public void createContact(Contact newContact) throws ContactException{
@@ -56,6 +51,10 @@ public class IBusinessImpl implements IBusiness {
     }
     public Page<Contact>findContactByCategoryId(Long categoryId, Pageable pageable){
         return contactRepository.findByCategoryId(categoryId, pageable);
+    }
+
+    public Optional<Contact> findContactById(Long id){
+        return contactRepository.findById(id);
     }
 
     //Authentification
