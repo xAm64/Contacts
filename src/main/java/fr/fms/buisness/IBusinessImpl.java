@@ -75,6 +75,10 @@ public class IBusinessImpl implements IBusiness {
             contactRepository.save(exisistContact);
         }
     }
+    //effacer un contact
+    public void deleteContactById(Long id){
+        contactRepository.deleteContactById(id);
+    }
     //Authentification
     public boolean isUserAuthenticated(){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

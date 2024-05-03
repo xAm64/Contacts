@@ -1,24 +1,22 @@
 
 j
-java:S1192:"MDefine a constant instead of duplicating this literal "listCategory" 3 times.(Ê—ÏÍ8º±“ìó1
+java:S1192:"MDefine a constant instead of duplicating this literal "listCategory" 3 times.(Ê—ÏÍ8èğûìó1
 v
-java:S1192-"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 6 times.(’¶ØÅûÿÿÿÿ8º±“ìó1
+java:S1192-"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 6 times.(’¶ØÅûÿÿÿÿ8èğûìó1
 h
-java:S1192Z"KDefine a constant instead of duplicating this literal "redirect:/" 3 times.(äÔ¶½8º±“ìó1
-d
-java:S6813"BRemove this field injection and use constructor injection instead.(ÀÛ–¿úÿÿÿÿ8Ç±“ìó1
+java:S1192Z"KDefine a constant instead of duplicating this literal "redirect:/" 3 times.(äÔ¶½8èğûìó1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8óğûìó1
 M
-java:S19051"+Remove this unnecessary cast to "Pageable".(ß×”Èúÿÿÿÿ8Ì±“ìó1
+java:S19051"+Remove this unnecessary cast to "Pageable".(ß×”Èúÿÿÿÿ8øğûìó1
 H
-java:S19055"+Remove this unnecessary cast to "Pageable".(‚†òã8Ì±“ìó1
+java:S19055"+Remove this unnecessary cast to "Pageable".(‚†òã8ùğûìó1
 ]
-java:S4684L"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8Ñ±“ìó1
+java:S4684L"@Replace this persistent entity with a simple POJO or DTO object.(æëÁİ8ûğûìó1
 ]
-java:S4684m"@Replace this persistent entity with a simple POJO or DTO object.(Ù©¡ş8Ñ±“ìó1
+java:S4684m"@Replace this persistent entity with a simple POJO or DTO object.(Ù©¡ş8şğûìó1
 d
-java:S1854~"GRemove this useless assignment to local variable "isUserAuthenticated".(•©‚à8Ö±“ìó1
+java:S1854~"GRemove this useless assignment to local variable "isUserAuthenticated".(•©‚à8ÿğûìó1
 U
-java:S1481~"8Remove this unused "isUserAuthenticated" local variable.(•©‚à8Ö±“ìó1
-^	java:S125"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8Ö±“ìó1
-W
-java:S1128":Remove this unused import 'fr.fms.dao.CategoryRepository'.(ë³«˜8Ö±“ìó1
+java:S1481~"8Remove this unused "isUserAuthenticated" local variable.(•©‚à8€ñûìó1
+^	java:S125"<This block of commented-out lines of code should be removed.(õÇµ†ÿÿÿÿÿ8ñûìó1

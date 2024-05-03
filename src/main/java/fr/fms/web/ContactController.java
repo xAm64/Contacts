@@ -27,7 +27,7 @@ import java.util.Optional;
 @Controller
 public class ContactController {
 
-    @Autowired ContactRepository contactRepository;
+    @Autowired
 
     private static final Logger log = LoggerFactory.getLogger(ContactController.class);
     private final IBusinessImpl buisness;
@@ -124,7 +124,7 @@ public class ContactController {
     @GetMapping("/deleteContact")
     public String deleteContact(@RequestParam(name = "id")Long id){
         boolean isUserAuthenticated = buisness.isUserAuthenticated();
-        contactRepository.deleteById(id);
+        buisness.deleteContactById(id);
         return "redirect:/";
     }
 

@@ -12,5 +12,5 @@ public interface ContactRepository  extends JpaRepository<Contact, Integer> {
     Page<Contact> findContactByFirstNameContains(String description, Pageable pageable);
     Page<Contact> findByCategoryId(Long id, Pageable pageable);
     Optional<Contact> findById(Long id);
-    void deleteById(Long id);
+    void deleteContactById(Long id);
 }
