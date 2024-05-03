@@ -51,7 +51,7 @@
                     <div class="form-group">
                         <label class="control-label">Categories :</label>
                         <select class="form-control" name="category">
-                            <option th:each="cat:${listCategories}" th:value="${cat.id}" th:text="${cat.name}"></option>
+                            <option th:each="cat:${listCategory}" th:value="${cat.id}" th:text="${cat.name}"></option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Mise a jour</button>

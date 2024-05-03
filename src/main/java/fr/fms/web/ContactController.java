@@ -26,6 +26,9 @@ import java.util.Optional;
 @Slf4j
 @Controller
 public class ContactController {
+
+    @Autowired ContactRepository contactRepository;
+
     private static final Logger log = LoggerFactory.getLogger(ContactController.class);
     private final IBusinessImpl buisness;
     private static final String VALIDATION_ERROR_MSG = "Erreur de validation du formulaire: {}";
@@ -112,9 +115,17 @@ public class ContactController {
             log.error(VALIDATION_ERROR_MSG, bindingResult.getAllErrors());
             return "/updateContact";
         } else  {
-            //créer la MAJ dans buisness
+            buisness.updateContact(contactUpdate);
+            log.info("Le contact: {} a bien été modifié.", contactUpdate);
+            return "redirect:/";
         }
-        return "redirect:/index";
+    }
+    //Effacer un contact
+    @GetMapping("/deleteContact")
+    public String deleteContact(@RequestParam(name = "id")Long id){
+        boolean isUserAuthenticated = buisness.isUserAuthenticated();
+        contactRepository.deleteById(id);
+        return "redirect:/";
     }
 
     //page d'accès refusé.

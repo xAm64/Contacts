@@ -18,5 +18,6 @@ public interface IBusiness {
 
     //catégories
     public List<Category> findAllCategories();
+    public Optional<Category> findCategoryById(Long id);
 
 }

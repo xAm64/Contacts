@@ -20,19 +20,23 @@ public class IBusinessImpl implements IBusiness {
     @Autowired
     CategoryRepository categoryRepository;
 
-    //contacts
-    public List<Contact> findAllArticle() { return contactRepository.findAll(); }
-
-    @Override
-    public List<Contact> findAll() {
-        return contactRepository.findAll();
-    }
-
+    //########## Catégories #############
+    //Liste des catégories
     @Override
     public List<Category> findAllCategories() {
         return categoryRepository.findAll();
     }
-
+    //trouver une par son id
+    public Optional<Category>findCategoryById(Long id){
+        return categoryRepository.findById(id);
+    }
+    //########## Contacts #############
+    //liste des contacts
+    @Override
+    public List<Contact> findAll() {
+        return contactRepository.findAll();
+    }
+    //créer un contact
     public void createContact(Contact newContact) throws ContactException{
         List<Contact> contactList = contactRepository.findAll();
         for (Contact contact: contactList){
@@ -45,18 +49,32 @@ public class IBusinessImpl implements IBusiness {
         }
         contactRepository.save(newContact);
     }
-
+    //recherche par nom de famille
     public Page<Contact> findContactByFirstNameContains(String keyword, Pageable pageable) {
         return contactRepository.findContactByFirstNameContains(keyword, pageable);
     }
+    //recherche par catégories
     public Page<Contact>findContactByCategoryId(Long categoryId, Pageable pageable){
         return contactRepository.findByCategoryId(categoryId, pageable);
     }
-
+    //recherche par id
     public Optional<Contact> findContactById(Long id){
         return contactRepository.findById(id);
     }
-
+    //Mise a jour d'un contact
+    public void updateContact(Contact contact){
+        Optional<Contact>optionalContact = contactRepository.findById(contact.getId());
+        if (optionalContact.isPresent()){
+            Contact exisistContact = optionalContact.get();
+            exisistContact.setFirstName(contact.getFirstName());
+            exisistContact.setLastName(contact.getLastName());
+            exisistContact.setEmail(contact.getEmail());
+            exisistContact.setPhone(contact.getPhone());
+            exisistContact.setAddress(contact.getAddress());
+            exisistContact.setCategory(contact.getCategory());
+            contactRepository.save(exisistContact);
+        }
+    }
     //Authentification
     public boolean isUserAuthenticated(){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
