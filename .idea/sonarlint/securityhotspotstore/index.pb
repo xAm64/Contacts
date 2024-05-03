@@ -25,3 +25,9 @@ e
 +src/main/java/fr/fms/entities/Category.java,e\a\eaca6e40994962bef6ae0ebb92777e3480df3e22
 `
 0src/main/java/fr/fms/dao/CategoryRepository.java,f\d\fd5f2b3c0afb6b51e298f96a0f986a8283328db0
+_
+/src/test/java/fr/fms/TestContactController.java,5\9\594c38c9f7a39e3d73130301b4db67d99d26d38a
+c
+3src/test/java/fr/fms/web/ContactCOntrollerTest.java,4\c\4c78e493f4ba7908eb88c02fa80dc58d085df81b
+c
+3src/test/java/fr/fms/web/ContactControllerTest.java,7\0\70a2fcbff88e8c1644fdd3f1a22bafb44bc624d7

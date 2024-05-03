@@ -1,22 +1,26 @@
 
-j
-java:S1192:"MDefine a constant instead of duplicating this literal "listCategory" 3 times.( ЧѕЌ8ирыму1
-v
-java:S1192-"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 6 times.(ТґЎ≈ы€€€€8ирыму1
-h
-java:S1192Z"KDefine a constant instead of duplicating this literal "redirect:/" 3 times.(д‘ґљ8ирыму1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(кжƒё8урыму1
-M
-java:S19051"+Remove this unnecessary cast to "Pageable".(я„Ф»ъ€€€€8шрыму1
-H
-java:S19055"+Remove this unnecessary cast to "Pageable".(ВЖтг8щрыму1
-]
-java:S4684L"@Replace this persistent entity with a simple POJO or DTO object.(жлЅЁ8ырыму1
-]
-java:S4684m"@Replace this persistent entity with a simple POJO or DTO object.(ў©°ю8юрыму1
-d
-java:S1854~"GRemove this useless assignment to local variable "isUserAuthenticated".(Х©Ва8€рыму1
-U
-java:S1481~"8Remove this unused "isUserAuthenticated" local variable.(Х©Ва8Асыму1
-^	java:S125О"<This block of commented-out lines of code should be removed.(х«µЖ€€€€€8Бсыму1
+Р
+java:S1192:"MDefine a constant instead of duplicating this literal "listCategory" 3 times.( ЧѕЌ8ирыму1J$2b01d915-6beb-4211-bca5-0d0f69057790
+Ь
+java:S1192-"TDefine a constant instead of duplicating this literal "isUserAuthenticated" 6 times.(ТґЎ≈ы€€€€8ирыму1J$3710126c-6fe2-40f5-9da4-86daeb27639d
+О
+java:S1192Z"KDefine a constant instead of duplicating this literal "redirect:/" 3 times.(д‘ґљ8ирыму1J$51593690-32e9-45a2-a391-7c736b6ad20f
+Е
+java:S6813"BRemove this field injection and use constructor injection instead.(кжƒё8урыму1J$a0d2e493-732e-4423-9cf3-8e2c1dcf2de4
+s
+java:S19051"+Remove this unnecessary cast to "Pageable".(я„Ф»ъ€€€€8шрыму1J$95164f52-bf17-4849-8798-1af95c6dfddc
+n
+java:S19055"+Remove this unnecessary cast to "Pageable".(ВЖтг8щрыму1J$6df5dae4-6108-425c-ae45-858908ac5dda
+Г
+java:S4684L"@Replace this persistent entity with a simple POJO or DTO object.(жлЅЁ8ырыму1J$ce3d50c3-0a3d-4ebd-b492-dbeb63c71bde
+Г
+java:S4684m"@Replace this persistent entity with a simple POJO or DTO object.(ў©°ю8юрыму1J$f9360959-32d1-4e00-b6b9-3be329dbb29d
+К
+java:S1854~"GRemove this useless assignment to local variable "isUserAuthenticated".(Х©Ва8€рыму1J$d6e1fcd8-cc67-4bec-8423-97257da0edcc
+{
+java:S1481~"8Remove this unused "isUserAuthenticated" local variable.(Х©Ва8Асыму1J$6c390864-0f33-48e9-9d83-93db5a44e618
+Д	java:S125О"<This block of commented-out lines of code should be removed.(х«µЖ€€€€€8Бсыму1J$e66eee39-88a8-4471-b452-a61b6ea02c1e
+W
+java:S1128":Remove this unused import 'fr.fms.dao.CategoryRepository'.(л≥ЂШ8…≈чоу1
+[
+java:S1128"9Remove this unused import 'fr.fms.dao.ContactRepository'.(∞ЌлЈ€€€€€8…≈чоу1
